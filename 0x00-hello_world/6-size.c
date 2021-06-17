@@ -3,7 +3,6 @@
  * main - print size of; char, int, long int, long long int and float
  *Return: 0
  */
-
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
