@@ -11,7 +11,7 @@ int main(void)
 
 	for (a_z = 'a' ; a_z <= 'z' ;  ++a_z)
 	{
-		if (a_z != 'e' || a_z != 'e')
+		if (a_z != 'e' || a_z != 'q')
 		{
 		putchar(a_z);
 		}
@@ -20,5 +20,6 @@ int main(void)
 	return (0);
 
 }
+
 
 
