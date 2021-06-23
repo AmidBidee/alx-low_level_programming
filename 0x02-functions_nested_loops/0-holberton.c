@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 
-	char array[9] = {'H', 'O', 'L', 'B', 'E', 'R', 'T', 'O', 'N'};
+	char array[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
 
 	for (i = 0 ; i < 9; i++)
 	{
