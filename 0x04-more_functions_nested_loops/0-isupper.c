@@ -3,7 +3,7 @@
  * _isupper - return 1 if c is uppercase
  * @c: params
  * Description: an integer
- * 
+ *
  * Return: 0
  */
 int _isupper(int c)
