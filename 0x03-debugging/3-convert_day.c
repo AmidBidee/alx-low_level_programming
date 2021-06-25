@@ -10,8 +10,6 @@
 
 int convert_day(int month, int day)
 {
-    month = 1997;
-    day = 2;
     switch (month)
     {
         case 2:
