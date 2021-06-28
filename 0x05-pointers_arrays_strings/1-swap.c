@@ -1,6 +1,9 @@
 #include "holberton.h"
 /**
  * swap_int - swaps the values of two integers
+ * @a: param 1
+ * @b: param 2
+ * Description: values to be switched
  *
  * Return: Nothing
  */
