@@ -40,17 +40,9 @@ void print_rev(char *s)
 
 	len = _strlen(string);
 
-	for (i = len; i >= 0; i--)
-	{
-		if (i != 0)
-		{
-			_putchar(string[i]);
-		}
-		else
-		{
-			_putchar(string[i]);
-			break;
-		}
-	}
+	i = len;
+	for (i--; i >= 0; i--)
+		_putchar(string[i]);
+
 	_putchar('\n');
 }
