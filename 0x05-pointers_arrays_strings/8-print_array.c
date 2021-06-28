@@ -3,9 +3,8 @@
 /**
  * print_array - prints elements of an array
  * @a: param 1
- * Description: array
  * @n: param 2
- * Description: number of elements
+ * Description: array, and number of elements
  */
 void print_array(int *a, int n)
 {
