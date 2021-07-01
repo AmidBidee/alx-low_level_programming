@@ -5,7 +5,7 @@
  * @src: src strings
  * @n: size
  * Description: strings and number of bytes
- * 
+ *
  * Return: A pointer
  */
 char *_strncat(char *dest, char *src, int n)
