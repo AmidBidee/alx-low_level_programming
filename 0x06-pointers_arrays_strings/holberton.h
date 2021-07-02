@@ -17,4 +17,8 @@ char *leet(char *s);
 
 char *rot13(char *);
 
+char *cap_string(char *);
+
+char *_strncpy(char *dest, char *src, int n);
+
 #endif
