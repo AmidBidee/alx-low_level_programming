@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * strstr - finds the first occurrence of the substring needle in a string
+ * _strstr - finds the first occurrence of the substring needle in a string
  * @haystack: string to be searched
  * @needle: subtring to be found
- * 
+ *
  * Return: pointer
  */
 char *_strstr(char *haystack, char *needle)
@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		while (1)
 		{
 			if (*b == 0)
-				return haystack;
+				return (haystack);
 			if (*a++ != *b++)
 				break;
 		}
