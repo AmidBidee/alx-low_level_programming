@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 {
 	int i, n, total;
 	char *p;
+
 	total = 0;
 
 	if ((argc - 1) != 0)
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			n = strtol(argv[i], &p, 10);
-			if (n)
+			if (!*p)
 				total += n;
 			else
 			{
