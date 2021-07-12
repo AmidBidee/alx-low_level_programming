@@ -7,14 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	(void) argc;
 
-	if ((argc - 1) != 0)
+	if (argv[1] && argv[2])
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-
-		printf("%i\n", a * b);
+		printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 		printf("Error\n");
