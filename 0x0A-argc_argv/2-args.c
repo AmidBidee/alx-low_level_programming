@@ -2,7 +2,7 @@
 /**
  * main - print all arguments received
  * @argc: argument count [int]
- * argv: argument vector [array]
+ * @argv: argument vector [array]
  * Return: 0
  */
 int main(int argc, char *argv[])
