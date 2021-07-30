@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <string.h>
+#include <stdio.h>
 /**
  * add_node - adds new node at the start linked list
  * @head: address of head
