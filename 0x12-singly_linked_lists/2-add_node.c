@@ -9,25 +9,19 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node = malloc(sizeof(list_t));
+	char *dstr = strdup(str);
+	list_t *new_node = (list_t *)malloc(sizeof(list_t));
 
-	if (new_node == NULL)	/* check if memory was allocated to new_node */
-	{
-		free(new_node);
-		return (NULL);
-	}
-	new_node->str = strdup(str);
-
-	if (new_node->str == NULL) /* check if data was added */
+	if (new_node == NULL || dstr == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
 
-	new_node->len = _strlen(strdup(str));
 	new_node->next = *head;
-
+	new_node->str = dstr;
+	new_node->len = _strlen(dstr);
 	*head = new_node;
 
-	return (*head);
+	return (new_node);
 }
