@@ -21,4 +21,5 @@ list_t *add_node(list_t **head, const char *str)
 		return (new_node);
 	else
 		return (NULL);
+	free(new_node);
 }
