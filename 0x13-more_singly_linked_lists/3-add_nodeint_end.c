@@ -26,7 +26,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	if (last->next != new_node || new_node == NULL)
 	{
-		free(new_node);
 		return (NULL);
 	}
 
