@@ -8,8 +8,11 @@ unsigned int binary_to_uint(const char *b)
 {
        	unsigned int num, power;
 	int str_len = _strlen(b);
-	int k;
-	
+	int k;	
+
+	if (b == NULL)
+		return (0);
+
 	for (k = 0; b[k] != '\0'; k++)
 	{
 		if (b[k] != '0' && b[k] != '1')
