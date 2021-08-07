@@ -7,15 +7,14 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num, power;
-	int str_len = _strlen(b);
-	int k;
+	int str_len;
 
 	if (b == NULL)
 		return (0);
 
-	for (k = 0; b[k] != '\0'; k++)
+	for (str_len = 0; b[str_len]; str_len++)
 	{
-		if (b[k] != '0' && b[k] != '1')
+		if (b[str_len] != '0' && b[str_len] != '1')
 			return (0);
 	}
 
