@@ -4,43 +4,43 @@
  */
 void jack_bauer(void)
 {
-	char time_arr[] = {'0', '0', '0', '0'}; /* hour 0 hour 0 min 0 minute 0 */
+	int h1 = 0, h2 = 0, m1 = 0, m2 = 0; /* hour 0 hour 0 min 0 minute 0 */
 	int min_count = 0, hr_count = 0;
 
 	while (hr_count <= 24 && min_count <= 60)
 	{
-		if (time_arr[3] != '9')
-			++time_arr[3];
+		if (m2 != 9)
+			++m2;
 		else
 		{
-			time_arr[2]++;
-			time_arr[3] = '0';
+			m1++;
+			m2 = 0;
 		}
 
 		if (min_count == 60)
 		{
 			if (hr_count != 23)
 			{
-				if (time_arr[1] != '9')
-					time_arr[1]++;
+				if (h2 != 9)
+					h2++;
 				else
 				{
-					time_arr[1] = '0';
-					time_arr[0]++;
+					h2 = 0;
+					h1++;
 				}
 				hr_count++;
 			}
 			else
 				break;
 			min_count = 0;
-			time_arr[2] = '0';
-			time_arr[3] = '0';
+			m1 = 0;
+			m2 = 0;
 		}
-		_putchar(time_arr[0]);
-		_putchar(time_arr[1]);
+		_putchar(h1 + '0');
+		_putchar(h2 + '0');
 		_putchar(':');
-		_putchar(time_arr[2]);
-		_putchar(time_arr[3]);
+		_putchar(m1 + '0');
+		_putchar(m2 + '0');
 		_putchar('\n');
 		min_count++;
 	}
