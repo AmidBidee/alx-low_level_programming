@@ -33,15 +33,15 @@ void jack_bauer(void)
 			else
 				break;
 			min_count = 0;
-            time_arr[2] = '0';
+			time_arr[2] = '0';
 			time_arr[3] = '0';
 		}
-        _putchar(time_arr[0]);
+		_putchar(time_arr[0]);
 		_putchar(time_arr[1]);
 		_putchar(':');
 		_putchar(time_arr[2]);
 		_putchar(time_arr[3]);
 		_putchar('\n');
-        min_count++;
+		min_count++;
 	}
 }
