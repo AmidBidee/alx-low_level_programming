@@ -7,7 +7,7 @@ void jack_bauer(void)
 	char time_arr[] = {'0', '0', '0', '0'}; /* hour 0 hour 0 min 0 minute 0 */
 	int min_count = 0, hr_count = 0;
 
-	while (hr_count < 25 && min_count < 61)
+	while (hr_count < 24 && min_count < 60)
 	{
 		if (time_arr[3] != '9')
 			++time_arr[3];
@@ -17,10 +17,8 @@ void jack_bauer(void)
 			time_arr[3] = '0';
 		}
 
-		if (min_count == 60)
+		if (min_count == 59)
 		{
-			time_arr[2] = '0';
-			time_arr[3] = '0';
 			if (hr_count != 23)
 			{
 				if (time_arr[1] != '9')
@@ -35,6 +33,8 @@ void jack_bauer(void)
 			else
 				break;
 			min_count = 0;
+            time_arr[2] = '0';
+			time_arr[3] = '0';
 		}
         _putchar(time_arr[0]);
 		_putchar(time_arr[1]);
