@@ -1,13 +1,26 @@
-#include <unistd.h>
-
+#include "lists.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _strlen - Return length of string
+ * @s: param
+ * Description: String to be passed in
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0
  */
-int _putchar(char c)
+int _strlen(char *s)
 {
-	return (write(1, &c, 1));
+	int i, string_len;
+
+	char *string = s;  /* copy string stored from point */
+
+	for (i = 0; string[i] != '\0'; i++)
+	{
+		if (string[i] != '\0')
+			continue;
+		else
+			break;
+	}
+	string_len = i;
+
+	return (string_len);
+	return (0);
 }
