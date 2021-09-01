@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _calloc - allocates memory for an array given number of elements and size
